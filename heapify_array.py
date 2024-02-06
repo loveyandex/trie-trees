@@ -1,11 +1,9 @@
 import math
 
-
 def heapify( A: list[int]):
       for i in range( math.floor(len(A)/2-1), -1, -1):
             A=make_heapify(A,i)
       return A
-
 
 def make_heapify(A,kk):
       if 2*kk>=len(A):
